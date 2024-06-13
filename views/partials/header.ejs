@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fademan Saloon</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="fm-container-default">
             <ul>
-                <li>
+                <span>
                     <a href="/">
                         <img src="images/logo-fademan.png" alt="company logo">
                     </a>
-                </li>
+                </span>
                 <li>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about-us">About Tinu</a></li>
-                        <li><a href="/service">Service</a></li>
-                        <li><a href="/testimonials">Testimonials</a></li>
+                        <li><a class="<%= locals.currentPath === '/' ? 'active' : '' %>" href="/">Home</a></li>
+                        <li><a class="<%= locals.currentPath === '/about-us' ? 'active' : '' %>" href="/about-us">About Tinu</a></li>
+                        <li><a class="<%= locals.currentPath === '/service' ? 'active' : '' %>" href="/service">Service</a></li>
+                        <li><a class="<%= locals.currentPath === '/testimonials' ? 'active' : '' %>" href="/testimonials">Testimonials</a></li>
                     </ul>
                 </li>
             </ul>
