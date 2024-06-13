@@ -6,9 +6,17 @@ const port = 3000;
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-    console.log("/ called");
-    res.send("Hello Tinu Mathai");
+    res.render("home.ejs");
 })
+
+app.get("/about-us", (req, res) => {
+    res.render("about-us.ejs");
+})
+
+app.get("/service", (req, res) => {
+    res.render("service.ejs");
+})
+
 
 
 app.listen(port, () => {
