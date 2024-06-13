@@ -1,11 +1,30 @@
 <%- include('partials/header.ejs') %>
-    <h1>Fademan</h1>
-    <% locals.testimonials.forEach((testimonial) => { %>
-        <div class="testimonial">
-            <h2><%= testimonial.heading %></h2>
-            <p><%= testimonial.body %></p>
-            <p>Rating: <%= testimonial.rating %> stars</p>
-            <p><strong><%= testimonial.reviewer %></strong>, <%= testimonial.source %></p>
-        </div>
-    <% }); %>
-<%- include('partials/footer.ejs') %>   
+    <div class="fixed-header-height"></div>
+    <main>
+        <section class="fm-container-default fm-py-30">
+            <h1>Hear from Our Happy Customers</h1>
+            <hr class="fm-my-12">
+            <% locals.testimonials.forEach((testimonial)=> { %>
+                <div class="fm-grey-card testimonial">
+                    <h3>
+                        <%= testimonial.heading %>
+                    </h3>
+                    <p>
+                        <%= testimonial.body %>
+                    </p>
+                    <p>Rating: <span class="fm-star">
+                            <% for (let i=0; i < testimonial.rating; i++) { %>
+                                &#9733;
+                                <% } %>
+                        </span>
+                        <%= testimonial.rating %> stars
+                    </p>
+                    <p><strong>
+                            <%= testimonial.reviewer %>
+                        </strong>, <%= testimonial.source %>
+                    </p>
+                </div>
+                <% }); %>
+        </section>
+    </main>
+    <%- include('partials/footer.ejs') %>

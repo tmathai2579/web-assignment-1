@@ -1,3 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+   font-family: "oxygen", sans-serif;
+}
+
+.fixed-header-height {
+  height: 108px;
+}
+
+.fm-my-12 {
+  margin-block: 12px;
+}
+
+.fm-py-30 {
+  padding-block: 30px;
+}
+
+.fm-text-center {
+  text-align: center;
+}
+
 /* utilities */
 .fm-container-default {
     max-width: 1272px;
@@ -5,6 +39,10 @@
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
+}
+.fm-star {
+  color: #eea519;
+  font-size: 1.8rem;
 }
 
 .active {
@@ -23,3 +61,36 @@
     bottom: -12px;
     left: 0;
 }
+
+.fm-grey-card {
+  margin-top: 15px;
+  padding: 20px;
+  background: #ececec;
+  border-radius: 10px;
+}
+
+/* Fonts */
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .oxygen-light {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .oxygen-regular {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .oxygen-bold {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  

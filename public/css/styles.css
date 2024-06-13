@@ -1,19 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-}
-ul {
-    list-style: none;
-}
-
 /* Header styles goes here */
 header {
     background-color: var(--primary-bg-color);
     font-size: 1.5rem;
+    position: fixed;
+    width: 100%;
 }
 
 header nav ul,
@@ -31,3 +21,28 @@ header a {
     color: var(--primary-text-color);
 }
 
+
+/* Footer styles goes here */
+
+footer {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    padding-block: 10px;
+}
+
+footer .fm-copyright {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* main */
+main {
+    min-height: calc(100svh - (108px + 40px));
+}
+
+/* testimonial */
+
+.testimonial p {
+    margin-top: 10px;
+}
