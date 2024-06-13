@@ -1,0 +1,11 @@
+<%- include('partials/header.ejs') %>
+    <h1>Fademan</h1>
+    <% locals.testimonials.forEach((testimonial) => { %>
+        <div class="testimonial">
+            <h2><%= testimonial.heading %></h2>
+            <p><%= testimonial.body %></p>
+            <p>Rating: <%= testimonial.rating %> stars</p>
+            <p><strong><%= testimonial.reviewer %></strong>, <%= testimonial.source %></p>
+        </div>
+    <% }); %>
+<%- include('partials/footer.ejs') %>   
