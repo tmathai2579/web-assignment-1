@@ -23,7 +23,56 @@ const testimonials = [
 ];
 
 const services = [
-    {}
+    {
+        name: "Men's Haircut",
+        description: "A precision haircut tailored to your style.",
+        price: "$25"
+    },
+    {
+        name: "Women's Haircut",
+        description: "A stylish cut and finish for women.",
+        price: "$35"
+    },
+    {
+        name: "Children's Haircut",
+        description: "A fun and stylish haircut for kids.",
+        price: "$20"
+    },
+    {
+        name: "Hair Coloring",
+        description: "Professional hair coloring with high-quality products.",
+        price: "$60"
+    },
+    {
+        name: "Highlights",
+        description: "Add dimension and brightness with highlights.",
+        price: "$75"
+    },
+    {
+        name: "Hair Styling",
+        description: "Expert styling for special occasions or everyday wear.",
+        price: "$30"
+    },
+    {
+        name: "Blow Dry",
+        description: "A sleek and smooth blowout for any hair type.",
+        price: "$25"
+    },
+    {
+        name: "Beard Trim",
+        description: "Detailed beard trimming and shaping.",
+        price: "$15"
+    },
+    {
+        name: "Threading",
+        description: "Precise eyebrow and facial hair threading.",
+        price: "$10"
+    },
+    {
+        name: "Keratin Treatment",
+        description: "Smooth and straighten hair with a keratin treatment.",
+        price: "$150"
+    }
 ];
 
 export { testimonials, services };

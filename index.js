@@ -20,7 +20,8 @@ app.get("/about-us", (req, res) => {
 
 app.get("/service", (req, res) => {
     res.render("service.ejs", { 
-        currentPath: '/service'
+        currentPath: '/service',
+        services: services
     });
 })
 

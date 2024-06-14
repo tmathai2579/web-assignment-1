@@ -1,14 +1,22 @@
 <%- include('partials/header.ejs') %>
     <div class="fixed-header-height"></div>
     <main>
-        <section class="hero-section">
+        <section class="hero-section fm-service-img">
             <div class="fm-container-default fm-h-100">
                 <div class="fm-container-wrapper fm-h-100">
                     <h1>What we offer</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit laboriosam placeat
-                        provident laborum sequi eius voluptas reiciendis unde explicabo!</p>
+                    <p>Discover our wide range of haircare and beauty services designed to help you look and feel your best. From precision haircuts to expert threading, we provide personalized treatments tailored to your unique style and needs.</p>
                 </div>
             </div>
+        </section>
+
+        <section class="fm-container-default fm-mb-40">
+            <h3 class="fm-service-heading">Our Services and Pricing</h3>
+            <ul>
+            <% locals.services.forEach((service)=> { %>
+                <li class="fm-service-list" ><div class="fm-service-name" title="<%= service.description %>"><%= service.name %></div><div class="fm-liner"></div><div  class="fm-service-price"><%= service.price %></div></li>
+                <% }); %>
+            </o1>
         </section>
     </main>
     <%- include('partials/footer.ejs') %>

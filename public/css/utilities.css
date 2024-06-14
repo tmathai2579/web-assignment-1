@@ -50,6 +50,10 @@ body {
   height: 100%;
 }
 
+.fm-mb-40 {
+  margin-bottom: 40px;
+}
+
 .active {
   position: relative;
   color: #b4b400;
@@ -73,6 +77,37 @@ body {
   background: #ececec;
   border-radius: 10px;
 }
+
+.hero-section {
+  background-image: url("../images/home-cover-image.jpg");
+  height: 700px;
+  background-size: cover;
+}
+.hero-section.fm-service-img {  background: url("../images/service-cover-image.jpg") center/cover;}
+.hero-section.fm-testimonial-img {  background: url("../images/testimonial-cover-image.jpg") center/cover;}
+.hero-section .fm-container-wrapper {
+  width: 80%;
+  display: grid;
+  place-content: center;
+}
+
+.hero-section .fm-container-wrapper h1{
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--white-text-color);
+}
+
+.hero-section .fm-container-wrapper p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+
+.hero-section > div {
+  display: grid;
+  place-content: center;
+}
+
 
 /* Fonts */
 .itim-regular {
