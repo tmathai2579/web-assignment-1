@@ -1,7 +1,9 @@
 :root {
     --primary-bg-color: #090f0f;
-    --secondary-bg-color: #090f0f;
+    --secondary-bg-color: #303030;
     --primary-text-color: #cccccc ;
     --secondary-text-color: #dddddd;
+    --white-text-color: #fff;
     --font-size-base: 1rem;
+    --font-family-1: "Poppins", sans-serif;
 }

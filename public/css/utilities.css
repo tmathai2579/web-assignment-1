@@ -1,19 +1,19 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-   font-family: "oxygen", sans-serif;
+  font-family: var(--font-family-1);
 }
 
 .fixed-header-height {
@@ -34,32 +34,37 @@ body {
 
 /* utilities */
 .fm-container-default {
-    max-width: 1272px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+  max-width: 1272px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
+
 .fm-star {
   color: #eea519;
   font-size: 1.8rem;
 }
 
+.fm-h-100 {
+  height: 100%;
+}
+
 .active {
-    position: relative;
-    color: #b4b400;
+  position: relative;
+  color: #b4b400;
 }
 
 .active::after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    height: 4px;
-    background-color: #b4b400;
-    border-radius: 10% 10% 40% 40%;
-    bottom: -12px;
-    left: 0;
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #b4b400;
+  border-radius: 10% 10% 40% 40%;
+  bottom: -12px;
+  left: 0;
 }
 
 .fm-grey-card {
@@ -71,26 +76,139 @@ body {
 
 /* Fonts */
 .itim-regular {
-    font-family: "Itim", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .oxygen-light {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .oxygen-regular {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .oxygen-bold {
-    font-family: "Oxygen", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.fm-btn-primary {
+  color: black;
+  background: #b4b400;
+  width: max-content;
+  padding: 8px 15px;
+  border-radius: 19px 35px 20px 29px;
+  margin-top: 20px;
+}
+
+.fm-btn-primary:hover {
+  color: black;
+  background: #fdfd09;
+}
+
+.fm-box {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: var(--secondary-bg-color);
+}
