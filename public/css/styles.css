@@ -47,6 +47,12 @@ main {
     margin-top: 5px;
 }
 
+.fm-review-card {
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
 /* service */
 .fm-service-list {
     display: flex;
@@ -86,12 +92,11 @@ main {
     height: 700px;
 }
 
-.achievement-section {
+.section-info-wrapper {
     display: flex;
-
 }
 
-.achievement-section h1 {
+.section-info-wrapper h1 {
     font-size: 3rem;
 }
 
@@ -121,17 +126,79 @@ main {
 }
 
 .fm-interest-list li>span:hover {
-    background-color: #ffffba;
+    background-color: var(--light-yellow-color);
     cursor: pointer;
 }
 
 
 .fm-content span {
     padding: 0px 4px;
-    background-color: #ffffba;
+    background-color: var(--light-yellow-color);
     border-radius: 3px;
 }
 
 @media only screen and (max-width: 1200px) {
     .fm-image { display: none }
+}
+
+/* Bubble */
+.bubble-container { overflow: hidden; }
+.bubble-container,
+.bubble-inside-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--active-color);
+    color: var(--primary-text-color);
+    z-index: 100;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.bubble-inside-container {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bubble-inside-container i {
+    font-size: 3rem;
+    color: var(--primary-bg-color);
+}
+
+.bubble-container span {
+    display: none;
+    opacity: 0;
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
+    transition: opacity 300ms;
+}
+
+.bubble-container:hover {
+    background-color: var(--btn-yellow-color);
+    width: calc(300px + 80px);
+    border-radius: 50px;
+    justify-content: flex-start;
+    padding-left: 20px; 
+    display: flex;
+    align-items: center;
+}
+
+.bubble-container:hover span {
+    display: inline;
+    opacity: 1;
+    white-space: nowrap;
+    margin-left: auto;
+    padding-right: 20px;
+    font-size: 40px;
+}
+
+.bubble-container:hover span a {
+    color: var(--primary-bg-color);
 }

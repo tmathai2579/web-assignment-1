@@ -4,6 +4,10 @@
     --primary-text-color: #cccccc ;
     --secondary-text-color: #dddddd;
     --white-text-color: #fff;
+    --light-yellow-color: #ffffba;
+    --review-color: #eea519;
+    --active-color: #b4b400;
+    --btn-yellow-color: #fdfd09;
     --font-size-base: 1rem;
     --font-family-1: "Poppins", sans-serif;
 }

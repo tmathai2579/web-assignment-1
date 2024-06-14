@@ -42,7 +42,7 @@ body {
 }
 
 .fm-star {
-  color: #eea519;
+  color: var(--review-color);
   font-size: 1.8rem;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .active {
   position: relative;
-  color: #b4b400;
+  color: var(--active-color);
 }
 
 .active::after {
@@ -71,17 +71,10 @@ body {
   display: inline-block;
   width: 100%;
   height: 4px;
-  background-color: #b4b400;
+  background-color: var(--active-color);
   border-radius: 10% 10% 40% 40%;
   bottom: -12px;
   left: 0;
-}
-
-.fm-grey-card {
-  margin-top: 15px;
-  padding: 20px;
-  /* background: #ececec; */
-  border-radius: 10px;
 }
 
 .hero-section {
@@ -232,8 +225,8 @@ body {
 }
 
 .fm-btn-primary {
-  color: black;
-  background: #b4b400;
+  color: var(--primary-bg-color);
+  background: var(--active-color);
   width: max-content;
   padding: 8px 15px;
   border-radius: 19px 35px 20px 29px;
@@ -241,8 +234,8 @@ body {
 }
 
 .fm-btn-primary:hover {
-  color: black;
-  background: #fdfd09;
+  color: var(--primary-bg-color);
+  background: var(--btn-yellow-color);
 }
 
 .fm-box {
@@ -253,4 +246,12 @@ body {
   text-align: center;
   justify-content: center;
   color: var(--secondary-bg-color);
+}
+
+.appointment-booking-banner {
+  background-color: var(--active-color);
+}
+
+.fm-flex {
+  display: flex;
 }
