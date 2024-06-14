@@ -6,17 +6,18 @@
                 <div class="fm-container-wrapper fm-h-100">
                     <h1>What we offer</h1>
                     <p>Discover our wide range of haircare and beauty services designed to help you look and feel your best. From precision haircuts to expert threading, we provide personalized treatments tailored to your unique style and needs.</p>
+                    <a class="fm-btn-primary" href="https://booksy.com/en-ca/17770_fademan_barbershop_964476_kitchener" target="_blank">Book an appointment</a>
                 </div>
             </div>
         </section>
 
         <section class="fm-container-default fm-mb-40">
-            <h3 class="fm-service-heading">Our Services and Pricing</h3>
+            <h3 class="fm-section-heading">Our Services and Pricing</h3>
             <ul>
             <% locals.services.forEach((service)=> { %>
                 <li class="fm-service-list" ><div class="fm-service-name" title="<%= service.description %>"><%= service.name %></div><div class="fm-liner"></div><div  class="fm-service-price"><%= service.price %></div></li>
                 <% }); %>
-            </o1>
+            </ul>
         </section>
     </main>
     <%- include('partials/footer.ejs') %>

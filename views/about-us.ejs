@@ -1,8 +1,48 @@
 <%- include('partials/header.ejs') %>
     <div class="fixed-header-height"></div>
     <main>
-        <section class="fm-container-default">
-            <h1>about-us page</h1>
+        <section class="hero-section fm-about-img">
+            <div class="fm-container-default fm-h-100">
+                <div class="fm-container-wrapper fm-h-100">
+                    <h1>I'm Tinu Mathai</h1>
+                    <p>Passionate in coding, former UX designer, coding enthusiast, web designer, and web developer.</p>
+                    <a class="fm-btn-primary" href="https://www.linkedin.com/in/tinu-mathai/" target="_blank">Check out LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="fm-container-default fm-mb-40 fm-py-50">
+                <div class="fm-section-content-wrapper">
+                    <div class="fm-content">
+                        <h3 class="fm-section-heading">About me</h3>
+                        <article class="fm-mb-15">
+                            Hello! My name is Tinu Mathai. I am currently pursuing a two-year Mobile Solutions Development course at the Waterloo campus. 
+                            Originally from Kerala, India, I hold a Master's degree in Computer Applications (MCA). My background includes substantial experience as a UX Designer, 
+                            which has honed my skills in creating intuitive and engaging user experiences. I am <span>an enthusiastic coder</span>, 
+                            always eager to learn and implement the latest technologies.
+                        </article>
+                        <article>
+                            Currently, my focus is on enhancing my skills in mobile solutions development. This course is equipping me with advanced knowledge and practical 
+                            experience in mobile application design, development, and deployment, further strengthening my ability to deliver cutting-edge mobile solutions.
+                            In the future, I aspire to establish a prominent career in the IT industry in Canada. My goal is to leverage my skills and knowledge to contribute 
+                            to innovative projects and make a significant impact in the tech community. I am particularly passionate about mobile development and 
+                            user experience design, and I am excited about the endless possibilities that lie ahead in the field of technology.
+                        </article>
+                       
+                            <p>Feel free to reach out to me at <a href="mailto:tinumathai94@gmail.com">tinumathai94@gmail.com</a></p>
+                    </div>
+                    <div class="fm-image">
+                        <img src="images/tinu-profile.png" alt="">
+                    </div>
+                </div>
+        </section>
+        <section class="fm-container-default fm-mb-40">
+            <h3 class="fm-section-heading">Key Interests</h3>
+            <ul  class="fm-interest-list">
+            <% locals.interests.forEach((interest)=> { %>
+                <li><span><%= interest %></span></li>
+                <% }); %>
+            </ul>
         </section>
     </main>
     <%- include('partials/footer.ejs') %>

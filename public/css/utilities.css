@@ -53,6 +53,12 @@ body {
 .fm-mb-40 {
   margin-bottom: 40px;
 }
+.fm-mb-15 {
+  margin-bottom: 15px;
+}
+.fm-py-50 {
+  padding-block: 50px;
+}
 
 .active {
   position: relative;
@@ -74,7 +80,7 @@ body {
 .fm-grey-card {
   margin-top: 15px;
   padding: 20px;
-  background: #ececec;
+  /* background: #ececec; */
   border-radius: 10px;
 }
 
@@ -85,6 +91,7 @@ body {
 }
 .hero-section.fm-service-img {  background: url("../images/service-cover-image.jpg") center/cover;}
 .hero-section.fm-testimonial-img {  background: url("../images/testimonial-cover-image.jpg") center/cover;}
+.hero-section.fm-about-img {  background: url("../images/about-cover-image.jpg") top/cover;}
 .hero-section .fm-container-wrapper {
   width: 80%;
   display: grid;

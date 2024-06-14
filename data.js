@@ -75,4 +75,27 @@ const services = [
     }
 ];
 
-export { testimonials, services };
+const interests = [
+    'Full Stack Development', 
+    'Front-end Development', 
+    'Back-end Development', 
+    'Web Development', 
+    'App Development', 
+    'Mobile App Design',
+    'E-commerce Development',
+    'Database Management', 
+    'DevOps', 
+    'Debugging',
+    'Web Design', 
+    'UI/UX Design', 
+    'Graphic Design', 
+    'Illustration', 
+    'Motion Graphics', 
+    'Video Editing',
+    'Photography',
+    'Digital Marketing',, 
+    'SEO (Search Engine Optimization)',
+    'Web Hosting'
+];
+
+export { testimonials, services, interests };

@@ -1,5 +1,5 @@
 import express from "express";
-import { testimonials, services } from './data.js'
+import { testimonials, services, interests } from './data.js'
 
 const app = express();
 const port = 3000;
@@ -14,7 +14,8 @@ app.get("/", (req, res) => {
 
 app.get("/about-us", (req, res) => {
     res.render("about-us.ejs", { 
-        currentPath: '/about-us'
+        currentPath: '/about-us',
+        interests: interests
     });
 })
 
